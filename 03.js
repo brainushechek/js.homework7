@@ -1,8 +1,5 @@
 var arr = [1, 2, 3, -1, -2, -3]
-var newArr = new Array()
-arr.forEach(val => {
-	if(val > 0) {
-		newArr.push(val)
-	}
+var positiveNumbers = arr.filter(function(value) {
+  return value > 0
 })
-console.log(newArr)
+console.log(positiveNumbers) 
